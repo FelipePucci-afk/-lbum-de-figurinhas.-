@@ -1,24 +1,76 @@
 /* src/App.css */
 
-/* Aplicação geral no fundo do app */
+/* Definindo variáveis de cor para fácil manutenção */
+:root {
+  --pokemon-blue: #2a75bb; /* Azul mais moderno */
+  --pokemon-yellow: #ffcb05; /* Amarelo Pikachu/Logo */
+  --pokemon-red: #e3350d; /* Vermelho Pokébola */
+  --background-color: #f5f5f5; /* Cinza bem claro, quase branco */
+  --card-background: #ffffff;
+  --text-color: #333333;
+  --text-light: #666666;
+  --border-color: #e0e0e0;
+}
+
+/* Reset básico e fonte padrão */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #fdf6e3; /* cor de papel antigo */
-  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-  background-repeat: repeat;
-  background-size: auto;
-  color: #333;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
-/* Para deixar a área principal melhor estruturada */
+/* Container principal da aplicação */
 .App {
-  padding: 20px;
+  max-width: 1200px; /* Limita a largura para melhor leitura */
   min-height: 100vh;
+  margin: 0 auto; /* Centraliza o container */
+  padding: 20px;
+  box-sizing: border-box; /* Garante que padding não aumente o tamanho total */
 }
 
-/* Estilos adicionais */
-h1, h2, h3 {
+/* Estilos para títulos principais (H1 no App.js e nas páginas) */
+h1.main-title { /* Adicione esta classe ao H1 no App.js se quiser um estilo diferente */
+  color: var(--pokemon-blue);
+  text-align: center;
   font-family: 'Roboto Slab', serif;
+  margin-bottom: 30px;
+  font-size: 2.5em; /* Tamanho maior */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  color: var(--pokemon-blue); /* Cor padrão para títulos */
+}
+
+/* Estilos para links */
+a {
+  color: var(--pokemon-blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--pokemon-red);
+  text-decoration: underline;
+}
+
+/* Estilos para feedback de carregamento e erro */
+.loading, .error {
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 1.2em;
+  color: var(--text-light);
+  font-weight: bold;
+}
+
+.error {
+  color: var(--pokemon-red);
+  background-color: #ffebee; /* Fundo rosa claro para erro */
+  border: 1px solid var(--pokemon-red);
+  border-radius: 8px;
+  display: inline-block; /* Para não ocupar a largura toda */
 }
