@@ -1,18 +1,15 @@
-/* src/App.css */
-
-/* Definindo variáveis de cor para fácil manutenção */
 :root {
-  --pokemon-blue: #2a75bb; /* Azul mais moderno */
-  --pokemon-yellow: #ffcb05; /* Amarelo Pikachu/Logo */
-  --pokemon-red: #e3350d; /* Vermelho Pokébola */
-  --background-color: #f5f5f5; /* Cinza bem claro, quase branco */
+  --pokemon-blue: #2a75bb; 
+  --pokemon-yellow: #ffcb05; 
+  --pokemon-red: #e3350d; 
+  --background-color: #f5f5f5; 
   --card-background: #ffffff;
   --text-color: #333333;
   --text-light: #666666;
   --border-color: #e0e0e0;
 }
 
-/* Reset básico e fonte padrão */
+
 body {
   margin: 0;
   padding: 0;
@@ -22,31 +19,31 @@ body {
   line-height: 1.6;
 }
 
-/* Container principal da aplicação */
+
 .App {
-  max-width: 1200px; /* Limita a largura para melhor leitura */
+  max-width: 1200px; 
   min-height: 100vh;
-  margin: 0 auto; /* Centraliza o container */
+  margin: 0 auto; 
   padding: 20px;
-  box-sizing: border-box; /* Garante que padding não aumente o tamanho total */
+  box-sizing: border-box; 
 }
 
-/* Estilos para títulos principais (H1 no App.js e nas páginas) */
-h1.main-title { /* Adicione esta classe ao H1 no App.js se quiser um estilo diferente */
+
+h1.main-title { 
   color: var(--pokemon-blue);
   text-align: center;
   font-family: 'Roboto Slab', serif;
   margin-bottom: 30px;
-  font-size: 2.5em; /* Tamanho maior */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  font-size: 2.5em; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif;
-  color: var(--pokemon-blue); /* Cor padrão para títulos */
+  color: var(--pokemon-blue); 
 }
 
-/* Estilos para links */
+
 a {
   color: var(--pokemon-blue);
   text-decoration: none;
@@ -58,7 +55,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Estilos para feedback de carregamento e erro */
+
 .loading, .error {
   text-align: center;
   padding: 50px 20px;
@@ -69,8 +66,8 @@ a:hover {
 
 .error {
   color: var(--pokemon-red);
-  background-color: #ffebee; /* Fundo rosa claro para erro */
+  background-color: #ffebee; 
   border: 1px solid var(--pokemon-red);
   border-radius: 8px;
-  display: inline-block; /* Para não ocupar a largura toda */
+  display: inline-block; 
 }
