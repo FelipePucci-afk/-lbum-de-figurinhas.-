@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+#  Pokédex React - Meu Álbum de Pokémon  Pessoal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Pokémon Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png)
 
-## Available Scripts
+Bem-vindo ao meu Álbum de Pokémon! Uma aplicação web desenvolvida com React que permite visualizar informações sobre os seus Pokémon favoritos, inspirada nos clássicos álbuns de figurinhas. Este projeto consome dados da [PokéAPI](https://pokeapi.co/) para fornecer detalhes atualizados.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+**[ ➡️ ACESSE A APLICAÇÃO ONLINE AQUI ⬅️ ](https://680ff485308bf7132d0999f2--classy-parfait-a57704.netlify.app)**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📸 Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Funcionalidades Principais
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **Visualização em Grade:** Exibe os Pokémon em um layout de grade, semelhante a um álbum de figurinhas.
+* **Busca Inicial:** Carrega os primeiros 151 Pokémon (Geração 1) por padrão.
+* **Página de Detalhes:** Clique em um Pokémon para ver informações detalhadas em uma página dedicada, incluindo:
+    * Imagem (Artwork Oficial)
+    * Nome e Número da Pokédex
+    * Tipos (com cores e badges estilizadas)
+    * Altura e Peso
+    * Habilidades (normais e ocultas)
+    * Stats Base
+* **Rotas Dinâmicas:** Utiliza `react-router-dom` para navegação entre a lista e os detalhes de cada Pokémon (`/pokemon/:nome`).
+* **Design Responsivo:** Interface adaptável para diferentes tamanhos de tela (desktop, tablets, mobile).
+* **Feedback Visual:** Indicadores de carregamento e mensagens de erro claras.
+* **Estilo Temático:** Visual inspirado nas cores e elementos da franquia Pokémon.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Tecnologias Utilizadas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* **Frontend:**
+    * [React](https://reactjs.org/) (v18+) - Biblioteca JavaScript para construção da interface.
+    * [React Router DOM](https://reactrouter.com/) (v6+) - Para gerenciamento de rotas SPA.
+    * [Axios](https://axios-http.com/) - Cliente HTTP para fazer requisições à PokéAPI.
+    * CSS3 - Para estilização customizada (cores, layout, responsividade).
+* **API:**
+    * [PokéAPI (v2)](https://pokeapi.co/) - Fonte de dados dos Pokémon.
+* **Build & Desenvolvimento:**
+    * [Node.js](https://nodejs.org/) - Ambiente de execução JavaScript.
+    * [npm](https://www.npmjs.com/) / [Yarn](https://yarnpkg.com/) - Gerenciador de Pacotes.
+    * [Create React App](https://create-react-app.dev/) - Toolchain para setup inicial do projeto React.
+* **Versionamento:**
+    * [Git](https://git-scm.com/) & [GitHub](https://github.com/) - Controle de versão e hospedagem do código.
+* **Hospedagem:**
+    * [Vercel](https://vercel.com/) / [Netlify](https://www.netlify.com/) *(Escolha qual você usou)* - Plataforma para deploy e hospedagem da aplicação online.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⚙️ Como Rodar o Projeto Localmente
 
-## Learn More
+Para executar este projeto em sua máquina, siga os passos abaixo:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1.  **Pré-requisitos:**
+    * Certifique-se de ter o [Node.js](https://nodejs.org/) (que inclui o npm) instalado.
+    * Tenha o [Git](https://git-scm.com/) instalado.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2.  **Clone o Repositório:**
+    ```bash
+    git clone [https://github.com/SEU_USUARIO_GITHUB/NOME_DO_SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO_GITHUB/NOME_DO_SEU_REPOSITORIO.git)
+    cd NOME_DO_SEU_REPOSITORIO
+    ```
+    *(Substitua `SEU_USUARIO_GITHUB/NOME_DO_SEU_REPOSITORIO` pelo caminho real do seu repo)*
 
-### Code Splitting
+3.  **Instale as Dependências:**
+    * Usando npm:
+        ```bash
+        npm install
+        ```
+    * Ou usando Yarn:
+        ```bash
+        yarn install
+        ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4.  **Inicie a Aplicação:**
+    * Usando npm:
+        ```bash
+        npm start
+        ```
+    * Ou usando Yarn:
+        ```bash
+        yarn start
+        ```
 
-### Analyzing the Bundle Size
+5.  **Acesse no Navegador:**
+    Abra seu navegador e visite `http://localhost:3000` (ou a porta indicada no seu terminal).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 👨‍💻 Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* **[Felipe Pucci Veloso]**
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Projeto desenvolvido como parte do trabalho prático da disciplina [Desenvolvimento de Software para Web] em [04/2025].*
