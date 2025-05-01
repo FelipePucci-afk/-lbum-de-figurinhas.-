@@ -1,13 +1,11 @@
-// src/App.js
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import PokemonDetailPage from './pages/PokemonDetailPage';
-import './App.css'; // Importa os estilos globais/base
+import './App.css'; 
 
 function App() {
   return (
-    // A classe 'App' aplica o padding, max-width e centralização definidos no App.css
     <div className="App">
     
 
@@ -16,8 +14,6 @@ function App() {
       
         <Route path="/" element={<HomePage />} />
 
-        {/* Rota Dinâmica: Renderiza a PokemonDetailPage */}
-        {/* O ':pokemonName' na URL será acessado dentro de PokemonDetailPage */}
         <Route path="/pokemon/:pokemonName" element={<PokemonDetailPage />} />
 
   
